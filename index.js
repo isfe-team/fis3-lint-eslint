@@ -107,7 +107,15 @@ function formatter(results) {
     msg += count.bold.yellow;
     return msg;
 }
+
 var _files = [];
+
+// 修复当重新 release 的时候无法重新 lint 的问题
+// 由于每次都是 spawn 一次，应该问题不大
+fis.on('release:end', function () {
+  _files = [];
+});
+
 module.exports = function(content, file, conf) {
   if(_files.indexOf(file.id) > -1){ //避免重复校验
     return;
