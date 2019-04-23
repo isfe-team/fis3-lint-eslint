@@ -1,5 +1,7 @@
 # fis3-lint-eslint
 
+> 原有的 `eslint` 为 `2.2.0`，此 fork 版本将其改为 `peerDependency`。
+
 [![npm version](https://badge.fury.io/js/fis3-lint-eslint.svg)](https://badge.fury.io/js/fis3-lint-eslint)  [![npm](https://img.shields.io/npm/dt/fis3-lint-eslint.svg)](http://npm-stat.com/charts.html?package=fis3-lint-eslint&author=zhangyihua&from=2016-01-01&to=2116-01-24)
 
 基于 [eslint](http://eslint.org/) 的 fis3 javascript linter。插件使用遵循 fis3 规则。
